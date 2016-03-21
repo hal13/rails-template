@@ -46,7 +46,7 @@ generate 'scaffold users user_id:string name:string mail_addr:string'
 # bootstrap設定
 generate 'bootstrap:install less'
 generate 'bootstrap:layout application fluid'
-generate 'bootstrap:themd users'
+generate 'bootstrap:themed users'
 
 # devise初期インストール
 generate 'devise:install'
