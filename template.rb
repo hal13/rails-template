@@ -38,10 +38,10 @@ end
 
 # factory_girl初期設定
 uncomment_lines 'spec/rails_helper.rb', /Dir\[Rails\.root\.join/
-get "~/.ruby_template/template/spec/support/factory_girl.rb", 'spec/support/factory_girl.rb'
+get "~/rails_template/spec/support/factory_girl.rb", 'spec/support/factory_girl.rb'
 
 # scaffold
-generate 'scaffold users user_id:string name:string mail_addr:string'
+# generate 'scaffold users user_id:string name:string mail_addr:string'
 
 # bootstrap設定
 generate 'bootstrap:install less'
@@ -51,4 +51,4 @@ generate 'bootstrap:themed users'
 # devise初期インストール
 generate 'devise:install'
 generate 'devise:views'
-generate 'devise user'
+generate 'devise users'
